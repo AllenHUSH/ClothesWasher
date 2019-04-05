@@ -1,7 +1,7 @@
 <template>
 	<view class="mainBox">
 		<view v-for="(item,index) in clothesInfo" class="goodBox">
-			<image v-bind:src="item.imgSrc+'blouse/'+(index+1)+'.jpg'" mode="widthFix"></image>
+			<image v-bind:src="item.imgSrc+'shoe/'+(index+1)+'.jpg'" mode="widthFix"></image>
 			<view>
 				<text v-text="item.name">商品名称</text>
 				<text v-text="item.price">价格</text>
@@ -18,42 +18,32 @@
 				clothesInfo:[
 					{
 						imgSrc: '../../../static/img/',
-						name:'羽绒服',
-						price: '¥49.9'
-					},
-					{
-						imgSrc: '../../../static/img/',
-						name:'轻薄外套',
-						price: '¥39.9'
-					},
-					{
-						imgSrc: '../../../static/img/',
-						name:'呢子外套',
-						price: '¥49.9'
-					},
-					{
-						imgSrc: '../../../static/img/',
-						name:'衬衫',
-						price: '¥19.9'
-					},
-					{
-						imgSrc: '../../../static/img/',
-						name:'西服外套',
+						name:'运动鞋',
 						price: '¥29.9'
 					},
 					{
 						imgSrc: '../../../static/img/',
-						name:'短袖',
+						name:'短靴',
+						price: '¥49.9'
+					},
+					{
+						imgSrc: '../../../static/img/',
+						name:'中长靴',
+						price: '¥59.9'
+					},
+					{
+						imgSrc: '../../../static/img/',
+						name:'帆布鞋',
 						price: '¥19.9'
 					},
 					{
 						imgSrc: '../../../static/img/',
-						name:'针织品',
+						name:'皮鞋',
 						price: '¥39.9'
 					},
 					{
 						imgSrc: '../../../static/img/',
-						name:'棉服',
+						name:'棉鞋',
 						price: '¥49.9'
 					}
 				]

@@ -30,33 +30,37 @@
 				"navigationBarTitleText": "下装"
 			}
         }
+        ,{
+            "path" : "pages/clothes/shoe/shoe",
+            "style" : {}
+        }
     ],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
+		"navigationBarTextStyle": "#ffffff",
 		"navigationBarTitleText": "Wisher",
-		"navigationBarBackgroundColor": "#e8989a",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarBackgroundColor": "#1296db",
+		"backgroundColor": "#ffffff"
 	},
 	"tabBar": {
-		"color": "#1296db",
-		"selectedColor": "#ffffff",
+		"color": "#bfbfbf",
+		"selectedColor": "#1296db",
 		"borderStyle": "black",
-		"backgroundColor": "#e8989a",
+		"backgroundColor": "#ffffff",
 		"list": [{
 				"pagePath": "pages/tabBar/index/index",
-				"iconPath": "static/icon/index.png",
-				"selectedIconPath": "static/icon/indexHL.png",
+				"iconPath": "static/icon/indexH.png",
+				"selectedIconPath": "static/icon/index.png",
 				"text": "首页"
 			},
 			{
 				"pagePath": "pages/tabBar/basket/basket",
-				"iconPath": "static/icon/basket.png",
-				"selectedIconPath": "static/icon/basketHL.png",
+				"iconPath": "static/icon/basketH.png",
+				"selectedIconPath": "static/icon/basket.png",
 				"text": "我的篮子"
 			}, {
 				"pagePath": "pages/tabBar/order/order",
-				"iconPath": "static/icon/order.png",
-				"selectedIconPath": "static/icon/orderHL.png",
+				"iconPath": "static/icon/orderH.png",
+				"selectedIconPath": "static/icon/order.png",
 				"text": "我的订单"
 			}
 		]
