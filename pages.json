@@ -1,0 +1,64 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/tabBar/index/index",
+			"style": {
+				"navigationBarTitleText": "商城"
+			}
+		}
+	    ,{
+            "path" : "pages/tabBar/basket/basket",
+            "style" : {
+				"navigationBarTitleText": "我的篮子"
+			}
+        }
+        ,{
+            "path" : "pages/tabBar/order/order",
+            "style" : {
+				"navigationBarTitleText": "我的订单"
+			}
+        }
+        ,{
+            "path" : "pages/clothes/blouse/blouse",
+            "style" : {
+				"navigationBarTitleText": "上装"
+			}
+        }
+        ,{
+            "path" : "pages/clothes/bottom/bottom",
+            "style" : {
+				"navigationBarTitleText": "下装"
+			}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "Wisher",
+		"navigationBarBackgroundColor": "#e8989a",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#1296db",
+		"selectedColor": "#ffffff",
+		"borderStyle": "black",
+		"backgroundColor": "#e8989a",
+		"list": [{
+				"pagePath": "pages/tabBar/index/index",
+				"iconPath": "static/icon/index.png",
+				"selectedIconPath": "static/icon/indexHL.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/tabBar/basket/basket",
+				"iconPath": "static/icon/basket.png",
+				"selectedIconPath": "static/icon/basketHL.png",
+				"text": "我的篮子"
+			}, {
+				"pagePath": "pages/tabBar/order/order",
+				"iconPath": "static/icon/order.png",
+				"selectedIconPath": "static/icon/orderHL.png",
+				"text": "我的订单"
+			}
+		]
+	}
+}
