@@ -5,35 +5,43 @@
 			"style": {
 				"navigationBarTitleText": "商城"
 			}
-		}
-	    ,{
+		},
+		{
             "path" : "pages/tabBar/basket/basket",
             "style" : {
 				"navigationBarTitleText": "我的篮子"
 			}
-        }
-        ,{
+        },
+		{
             "path" : "pages/tabBar/order/order",
             "style" : {
 				"navigationBarTitleText": "我的订单"
 			}
-        }
-        ,{
+        },
+		{
             "path" : "pages/clothes/blouse/blouse",
             "style" : {
 				"navigationBarTitleText": "上装"
 			}
-        }
-        ,{
+        },
+		{
             "path" : "pages/clothes/bottom/bottom",
             "style" : {
 				"navigationBarTitleText": "下装"
 			}
-        }
-        ,{
+        },
+		{
             "path" : "pages/clothes/shoe/shoe",
-            "style" : {}
-        }
+            "style" : {
+				"navigationBarTitleText": "鞋履"
+			}
+        },
+		{
+		    "path" : "pages/clothes/other/other",
+		    "style" : {
+				"navigationBarTitleText": "其他"
+			}
+		}
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "#ffffff",

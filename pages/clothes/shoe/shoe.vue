@@ -5,13 +5,15 @@
 			<view>
 				<text v-text="item.name">商品名称</text>
 				<text v-text="item.price">价格</text>
-				<button>加入洗衣篮</button>
+				<button v-on:click="addTobasket" v-bind:data-num="index" data-img="shoe">加入洗衣篮</button>
 			</view>
 		</view>
 	</view>
 </template>
 
 <script>
+	// 引入公共的bug，来做为中间传达的工具
+	import Bus from '../../../components/bus.js'
 	export default {
 		data() {
 			return {
@@ -48,6 +50,20 @@
 					}
 				]
 			};
+		},
+		methods:{
+			addTobasket: function (ev) {
+				var num = ev.target.dataset.num;
+				var img = ev.target.dataset.img;
+				var json = [];
+				var busData = {};
+				busData.name = this.$data.clothesInfo[num].name;
+				busData.price = this.$data.clothesInfo[num].price;
+				busData.img = img;
+				busData.num = parseInt(num);
+				console.log(busData);
+				Bus.$emit('val',busData);
+			}
 		}
 	}
 </script>

@@ -3,8 +3,8 @@
 		<view>
 			<view v-on:click="shangzhuang" class="indexButton">上装</view>
 			<view v-on:click="xiazhuang" class="indexButton">下装</view>
-			<view v-on:click="xiazhuang" class="indexButton">鞋子</view>
-			<view v-on:click="xiazhuang" class="indexButton">其他</view>
+			<view v-on:click="xiezi" class="indexButton">鞋子</view>
+			<view v-on:click="qita" class="indexButton">其他</view>
         </view>
 	</view>
 </template>
@@ -25,6 +25,16 @@
 			xiazhuang(){
 				uni.navigateTo({
 					url: '../../clothes/bottom/bottom'
+				})
+			},
+			xiezi(){
+				uni.navigateTo({
+					url: '../../clothes/shoe/shoe'
+				})
+			},
+			qita(){
+				uni.navigateTo({
+					url: '../../clothes/other/other'
 				})
 			}
 		}
