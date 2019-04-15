@@ -4,7 +4,7 @@
 			<image v-bind:src="item.imgSrc+'bottom/'+(index+1)+'.jpg'" mode="widthFix"></image>
 			<view>
 				<text v-text="item.name">商品名称</text>
-				<text v-text="item.price">价格</text>
+				<text v-text="'¥'+item.price">价格</text>
 				<button v-on:click="addTobasket" v-bind:data-num="index" data-img="bottom">加入洗衣篮</button>
 			</view>
 		</view>
@@ -21,42 +21,42 @@
 					{
 						imgSrc: '../../../static/img/',
 						name:'牛仔裤',
-						price: '¥19.9'
+						price: '19.9'
 					},
 					{
 						imgSrc: '../../../static/img/',
 						name:'半身裙',
-						price: '¥19.9'
+						price: '19.9'
 					},
 					{
 						imgSrc: '../../../static/img/',
 						name:'西服裤子',
-						price: '¥29.9'
+						price: '29.9'
 					},
 					{
 						imgSrc: '../../../static/img/',
 						name:'保暖裤',
-						price: '¥29.9'
+						price: '29.9'
 					},
 					{
 						imgSrc: '../../../static/img/',
 						name:'休闲裤/运动裤',
-						price: '¥29.9'
+						price: '29.9'
 					},
 					{
 						imgSrc: '../../../static/img/',
 						name:'连衣裙',
-						price: '¥49.9'
+						price: '49.9'
 					},
 					{
 						imgSrc: '../../../static/img/',
 						name:'连体裤',
-						price: '¥39.9'
+						price: '39.9'
 					},
 					{
 						imgSrc: '../../../static/img/',
 						name:'毛裤',
-						price: '¥29.9'
+						price: '29.9'
 					}
 				]
 			};

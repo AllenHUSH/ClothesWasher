@@ -4,7 +4,7 @@
 			<image v-bind:src="item.imgSrc+'other/'+(index+1)+'.jpg'" mode="widthFix"></image>
 			<view>
 				<text v-text="item.name">商品名称</text>
-				<text v-text="item.price">价格</text>
+				<text v-text="'¥'+item.price">价格</text>
 				<button v-on:click="addTobasket" v-bind:data-num="index" data-img="other">加入洗衣篮</button>
 			</view>
 		</view>
@@ -21,32 +21,32 @@
 					{
 						imgSrc: '../../../static/img/',
 						name:'皮包（小）',
-						price: '¥39.9'
+						price: '39.9'
 					},
 					{
 						imgSrc: '../../../static/img/',
 						name:'皮包（大）',
-						price: '¥59.9'
+						price: '59.9'
 					},
 					{
 						imgSrc: '../../../static/img/',
 						name:'书包',
-						price: '¥19.9'
+						price: '19.9'
 					},
 					{
 						imgSrc: '../../../static/img/',
 						name:'帽子',
-						price: '¥19.9'
+						price: '19.9'
 					},
 					{
 						imgSrc: '../../../static/img/',
 						name:'丝巾',
-						price: '¥29.9'
+						price: '29.9'
 					},
 					{
 						imgSrc: '../../../static/img/',
 						name:'围巾',
-						price: '¥29.9'
+						price: '29.9'
 					}
 				]
 			};

@@ -1,0 +1,47 @@
+
+.basketBox{
+	background-color: #1296DB;
+	color: #FFFFFF;
+	width: 90vw;
+	margin: 10px 5vw 10px 2vw;
+	border-radius: 3vw;
+	padding: 3vw;
+}
+.basketBox image{
+	width: 30vw;
+	display: inline-block;
+}
+#infoBox{
+	width: 60vw;	
+	display: inline-block;
+}
+.basketBox text{
+	display: block;
+}
+.basketBox button{
+	width: 10vw;
+	height: 10vw;
+	display: inline-block;
+}
+.basketBox input{
+	background-color: #FFFFFF;
+	height: 10vw;
+	line-height: 10vw;
+	width: 10vw;
+	text-align: center;
+	display: inline-block;
+	color: #000000;
+}
+#none text{
+	margin: 50px 0;
+	font-size: 30px;
+	display: block;
+	color: #DDDDDD;
+	text-align: center;
+}
+#payBox{
+	text-align: center;
+	background-color: #1296DB;
+	color: #FFFFFF;
+}
+

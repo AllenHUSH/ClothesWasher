@@ -1,0 +1,12 @@
+
+.indexButton{
+	background-color: #1296db;
+	color: #FFFFFF;
+	width: 40vw;
+	height: 40vw;
+	margin: 5vw 5vw;
+	float: left;
+	line-height: 40vw;
+	text-align: center;
+}
+

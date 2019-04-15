@@ -1,0 +1,38 @@
+
+.basketBox{
+	background-color: #1296DB;
+	color: #FFFFFF;
+	width: 90vw;
+	margin: 10px 5vw;
+	border-radius: 3vw;
+}
+.basketBox image{
+	width: 30vw;
+	float: left;
+}
+#infoBox{
+	width: 60vw;
+}
+.basketBox text{
+	display: block;
+}
+.basketBox button{
+	width: 10vw;
+	display: inline-block;
+}
+.basketBox input{
+	width: 30vw;
+	display: inline-block;
+}
+#none text{
+	margin: 50px 0;
+	font-size: 30px;
+	display: block;
+	color: #DDDDDD;
+	text-align: center;
+}
+#payBox{
+	background-color: #1296DB;
+	color: #FFFFFF;
+}
+

@@ -3,10 +3,10 @@
 		<view class="basketBox" v-for="(item,index) in goodInfo">
 			<image v-bind:src="item.imgSrc" mode="widthFix"></image>
 			<view id="infoBox">
-				<text v-text="item.name">商品名称</text>
+				<text v-text="item.name" style="font-size: 8vw;">商品名称</text>
 				<text v-text="'单价：¥'+item.price"></text>
-				<input type="number" min="1" v-model="item.amount"/>
 				<button v-on:click="addAmount" v-bind:data-num="index">+</button>
+				<input type="number" v-model="item.amount"/>
 				<button v-on:click="subAmount" v-bind:data-num="index">-</button>
 			</view>
 		</view>
@@ -15,7 +15,8 @@
 			<text>快去添加吧</text>
 		</view>
 		<view id="payBox">
-			<text>合计：{{tatal}}</text>
+			<text>合计：¥{{tatal}}</text>
+			<button v-on:click="pay">付款</button>
 		</view>
 	</view>
 </template>
@@ -46,7 +47,7 @@
 			console.log(this.goodInfo.length);
 		},
 		mounted: function () {
-			var that = this
+			let that = this
 			// 用$on事件来接收参数
 			Bus.$on('val', (tempData) => {
 				tempData.amount = 1;
@@ -60,22 +61,24 @@
 			tatalPay(){
 				console.log(this.goodInfo.length);
 				this.tatal = 0.00;
-				for(var i=0;i<this.goodInfo.length;i++){
-					// this.tatal = parseInt(this.goodInfo[i].price) * parseInt(this.goodInfo[i].amount);
-					this.tatal = parseFloat(this.goodInfo[i].price) * parseFloat(this.goodInfo[i].amount) + this.tatal;
-					// this.tatal = this.goodInfo[i].price * this.goodInfo[i].amount;
-					// this.tatal = eval(this.goodInfo[i].price * this.goodInfo[i].amount);
+				for(let i=0;i<this.goodInfo.length;i++){
+					let temp = parseFloat(this.goodInfo[i].price) * parseFloat(this.goodInfo[i].amount) + this.tatal;
+					this.tatal = temp;
 				}
 			},
 			addAmount(ev){
-				var num = ev.target.dataset.num;
+				let num = ev.target.dataset.num;
 				this.goodInfo[num].amount++;
 				this.tatalPay();
 			},
 			subAmount(ev){
-				var num = ev.target.dataset.num;
+				let num = ev.target.dataset.num;
 				this.goodInfo[num].amount--;
+				if(this.goodInfo[num].amount<1)this.goodInfo[num].amount=1;
 				this.tatalPay();
+			},
+			pay(){
+				location.reload()
 			}
 		}
 	}
@@ -86,26 +89,34 @@
 	background-color: #1296DB;
 	color: #FFFFFF;
 	width: 90vw;
-	margin: 10px 5vw;
+	margin: 10px 5vw 10px 2vw;
 	border-radius: 3vw;
+	padding: 3vw;
 }
 .basketBox image{
 	width: 30vw;
-	float: left;
+	display: inline-block;
 }
 #infoBox{
-	width: 60vw;
+	width: 60vw;	
+	display: inline-block;
 }
 .basketBox text{
 	display: block;
 }
 .basketBox button{
 	width: 10vw;
+	height: 10vw;
 	display: inline-block;
 }
 .basketBox input{
-	width: 30vw;
+	background-color: #FFFFFF;
+	height: 10vw;
+	line-height: 10vw;
+	width: 10vw;
+	text-align: center;
 	display: inline-block;
+	color: #000000;
 }
 #none text{
 	margin: 50px 0;
@@ -115,6 +126,8 @@
 	text-align: center;
 }
 #payBox{
-	position: fixed;
+	text-align: center;
+	background-color: #1296DB;
+	color: #FFFFFF;
 }
 </style>

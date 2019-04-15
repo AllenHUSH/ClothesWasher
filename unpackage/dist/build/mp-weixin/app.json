@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/tabBar/index/index",
+    "pages/tabBar/basket/basket",
+    "pages/tabBar/order/order",
+    "pages/clothes/blouse/blouse",
+    "pages/clothes/bottom/bottom",
+    "pages/clothes/shoe/shoe",
+    "pages/clothes/other/other"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "Wisher",
+    "navigationBarBackgroundColor": "#1296db",
+    "backgroundColor": "#ffffff"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#1296db",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/tabBar/index/index",
+        "iconPath": "static/icon/indexH.png",
+        "selectedIconPath": "static/icon/index.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/tabBar/basket/basket",
+        "iconPath": "static/icon/basketH.png",
+        "selectedIconPath": "static/icon/basket.png",
+        "text": "我的篮子"
+      },
+      {
+        "pagePath": "pages/tabBar/order/order",
+        "iconPath": "static/icon/orderH.png",
+        "selectedIconPath": "static/icon/order.png",
+        "text": "我的订单"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

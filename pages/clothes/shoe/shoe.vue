@@ -4,7 +4,7 @@
 			<image v-bind:src="item.imgSrc+'shoe/'+(index+1)+'.jpg'" mode="widthFix"></image>
 			<view>
 				<text v-text="item.name">商品名称</text>
-				<text v-text="item.price">价格</text>
+				<text v-text="'¥'+item.price">价格</text>
 				<button v-on:click="addTobasket" v-bind:data-num="index" data-img="shoe">加入洗衣篮</button>
 			</view>
 		</view>
@@ -21,32 +21,32 @@
 					{
 						imgSrc: '../../../static/img/',
 						name:'运动鞋',
-						price: '¥29.9'
+						price: '29.9'
 					},
 					{
 						imgSrc: '../../../static/img/',
 						name:'短靴',
-						price: '¥49.9'
+						price: '49.9'
 					},
 					{
 						imgSrc: '../../../static/img/',
 						name:'中长靴',
-						price: '¥59.9'
+						price: '59.9'
 					},
 					{
 						imgSrc: '../../../static/img/',
 						name:'帆布鞋',
-						price: '¥19.9'
+						price: '19.9'
 					},
 					{
 						imgSrc: '../../../static/img/',
 						name:'皮鞋',
-						price: '¥39.9'
+						price: '39.9'
 					},
 					{
 						imgSrc: '../../../static/img/',
 						name:'棉鞋',
-						price: '¥49.9'
+						price: '49.9'
 					}
 				]
 			};
